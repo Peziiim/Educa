@@ -40,7 +40,6 @@ body {
 #home {
     background-color: rgb(0, 106, 255);
     border-radius: var(--btnborderradius);
-    margin-left: 100px;
 }
 
 .left-bar {
@@ -98,6 +97,63 @@ body {
     .videos {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .nav-bar {
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .nav-bar button {
+        margin: 5px;
+        margin-left: 80vw;
+        margin-right: 30px;
+    }
+
+    #home {
+        margin-top: 20px;
+        margin-left: 80vw;
+        margin-right: 20px;
+    }
+  
+    .title {
+        margin-top: 50px;
+    }
+
+    .icon {
+        margin-top: 42px;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-bar {
+        width: 100%;
+        height: 80vh;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .video-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .videos {
+        width: 80vw;
+        height: 95vh;
+    }
+
+    .text {
+        width: 100vw;
     }
   }
   
